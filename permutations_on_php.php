@@ -5,7 +5,6 @@ function generatorCombinations($from, $by)
     $comb = range(0, $by - 1);
     yield $comb;
     $max = $from - 1;
-    $result = [];
     $last_index = $by - 1;
     while ($comb[0] != $max - $last_index) {
         $min = $comb[$last_index];
